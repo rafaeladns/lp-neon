@@ -264,19 +264,27 @@
 
 //Depoimentos//
 .s-depoimentos{
-    padding-top: 13.4rem;
-    .top{
-        margin-bottom: 4rem;
-        h2{
-            span{
-                display: block;
-                color: $gray-200;
-                margin-bottom: 1.4rem;
-            }
-        }
+   padding-top: 13.4rem;
+   .top{
+    @include flex(row, flex-end, space-between);
+    margin-bottom: 4rem;
+    h2{
+       span{
+        display: block;
+        color: $gray-200;
+        margin-bottom: 1.4rem;
+       } 
     }
 
-    .slide-depoimentos{
-        overflow: hidden;
+    .swiper-pagination{
+      position: relative;
+      .swiper-pagination-bullets-dynamic{
+        background-color: $brand-yellow;
+      } 
     }
+   }
+
+   .slide-depoimentos{
+    overflow: hidden;
+   }
 }
